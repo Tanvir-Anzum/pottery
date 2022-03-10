@@ -14,7 +14,7 @@ const SingleItem = () => {
   const [item, setItem] = useState({})
  // item.email = user?.email
   useEffect(() => {
-    fetch(`http://localhost:5000/singleItem/${itemId}`)
+    fetch(`https://whispering-fjord-55786.herokuapp.com//${itemId}`)
       .then((res) => res.json())
       .then((data) => setItem(data))
   }, [])

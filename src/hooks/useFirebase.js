@@ -93,7 +93,7 @@ const useFirebase = () => {
   }, [])
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://whispering-fjord-55786.herokuapp.com/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin))
   }, [user.email])
@@ -159,7 +159,7 @@ const useFirebase = () => {
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName }
     console.log(user)
-    fetch('http://localhost:5000/users', {
+    fetch('https://whispering-fjord-55786.herokuapp.com/users', {
       method: method,
       headers: {
         'content-type': 'application/json',

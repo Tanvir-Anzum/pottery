@@ -26,7 +26,7 @@ const Review = () => {
       comment: review,
       reviewer: user.email,
     }
-    fetch('http://localhost:5000/reviews', {
+    fetch('https://whispering-fjord-55786.herokuapp.com/reviews', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
