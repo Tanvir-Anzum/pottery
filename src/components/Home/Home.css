@@ -27,8 +27,7 @@ img{
 #first,#second,#third{
       box-shadow: rgb(17 17 26 / 10%) 0 0 16px;
       border-radius: 20px;
-      background-color: #898989;
-  color: white;
+     
       /* height: 900px; */
       /* background-color: teal; */
 }
