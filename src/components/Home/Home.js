@@ -115,7 +115,7 @@ const Home = () => {
               </div>
             </div>
             {/* <div className='box col'> */}
-            <div id='third' className='pt-5 pb-5 col b'>
+            <div id='third' className='pt-5 pb-5 col '>
               <img id='three' src={reviewerThree} alt='' />
               <div>
                 <h5>Customer</h5>
