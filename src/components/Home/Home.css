@@ -17,6 +17,10 @@
 .color{
   color: orange;
 }
+.b{
+  background-color: #898989;
+  color: white;
+}
 #bottom{
   margin-bottom: 120px;
 }

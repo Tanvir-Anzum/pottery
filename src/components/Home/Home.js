@@ -83,8 +83,8 @@ const Home = () => {
         <div className='container'>
           <div className='row row-cols-sm-1 row-cols-md-3'>
             {/* <div id='lower-space' className='box col '> */}
-            <div className='d-flex justify-content-center'>
-              <div id='first' className='pt-5 col pb-5'>
+            <div className='d-flex justify-content-center '>
+              <div id='first' className='pt-5 col pb-5 b'>
                 <img id='one' src={reviewerOne} alt='' />
                 <div>
                   <h5>Customer</h5>
@@ -100,7 +100,7 @@ const Home = () => {
               </div>
             </div>
             {/* <div className='box col'> */}
-            <div id='second' className='pt-5 col pb-5'>
+            <div id='second' className='pt-5 col pb-5 b'>
               <img id='two' src={reviewerTwo} alt='' />
               <div>
                 <h5>Customer</h5>
@@ -115,7 +115,7 @@ const Home = () => {
               </div>
             </div>
             {/* <div className='box col'> */}
-            <div id='third' className='pt-5 pb-5 col'>
+            <div id='third' className='pt-5 pb-5 col b'>
               <img id='three' src={reviewerThree} alt='' />
               <div>
                 <h5>Customer</h5>
