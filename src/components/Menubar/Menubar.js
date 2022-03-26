@@ -22,38 +22,44 @@ const Menubar = () => {
           </button>
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-              
               <li className='nav-item p-2 nav-link active'>
                 <Link className='nav-link p-2' to='/'>
                   Home
                 </Link>
-              </li>  
+              </li>
 
               <li className='nav-item p-2 nav-link active'>
                 <Link className='nav-link p-2' to='/addEvent'>
                   Add A New Service
                 </Link>
               </li>
+              
+              
+
               {user?.email ? (
-                <div>
-                  <Link to='/dashboard'>
-                    <button className='items btn btn-info p-1 '>
+                <div className='d-flex'>
+                  <li className='nav-item p-2 nav-link active'>
+                    <Link className='nav-link p-2' to='/dashboard'>
+                      Dashboard
+                    </Link>
+                  </li>
+                  {/* <Link to='/dashboard'>
+                    <button className='items btn btn-primary btns p-1 '>
                       Dashboard
                     </button>
-                  </Link>
-                  <button
-                    className='nav-item btn btn-warning p-1 '
-                    onClick={logOut}
-                  >
+                  </Link> */}
+                  <li>
+                  <button className='items btn btn-warning p-1  ' onClick={logOut}>
                     Logout
                   </button>
+                  </li>
                 </div>
               ) : (
                 <Link to='/login'>
-                  <button className='items btn btn-info p-1 '>Login</button>
+                  <button className='items btn btnn p-1 '>Login</button>
                 </Link>
               )}
-              <Link className='nav-item p-2' to='/admin'>
+              <Link className=' p-2 item-s' to='/admin'>
                 <li className=''>{user?.email}</li>
               </Link>
             </ul>

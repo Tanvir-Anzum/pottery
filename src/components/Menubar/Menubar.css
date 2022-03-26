@@ -1,10 +1,24 @@
 .items {
   list-style: none;
-  margin: 5px;
+  margin-top: 7px;
   font-size: 20px;
   text-decoration: none;
   color: black;
 }
+.item-s {
+  position: absolute;
+  list-style: none;
+  margin-top: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  /* margin-left: 220px; */
+  right: 330px;
+}
 .mt{
   margin-top: 0;
+}
+.btnn{
+  background-color: #64b5f6;
+   margin-top: 15px;
 }

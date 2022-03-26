@@ -32,6 +32,8 @@ const Home = () => {
      .then((res) => res.json())
      .then((data) => setReview(data))
  }, [])
+ document.body.style = ' background-color: white;'
+  
   return (
     <div className=' mb-5'>
       <Menubar></Menubar>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import Menubar from '../Menubar/Menubar'
+import './AddEvents.css'
 
 
 const AddEvents = () => {
@@ -25,33 +26,44 @@ const AddEvents = () => {
     console.log('hi')
     // console.log(data);
   }
+   document.body.style =
+     ' background-image: linear-gradient(45deg,#98f5e1,#8eecf5,#b3e5fc,#e3f2fd); background-repeat: no-repeat;height:100vh;'
   return (
-    <div>
-     <Menubar></Menubar>
-      <h1 className='mt-5 text-center text-info'>Please Add Services</h1>
-      <div className='login-box w-25 m-auto mt-5'>
-        <div className='event-box d-flex justify-content-center align-items-center'>
-          <div className='login-form'>
+    <div className='all'>
+      <div className=' w-25 m-auto '>
+        <div className='ww d-flex justify-content-center align-items-center'>
+          <div className='login-form center'>
+            <h1 className='r'> Add Services</h1>
+
             <form onSubmit={handleSubmit(onSubmit)}>
-              <input
-                {...register('title')}
-                placeholder='title'
-                className='p-2 m-2 w-100'
-              />
-
-              <input
-                {...register('description')}
-                placeholder='Description'
-                className='p-2 m-2 w-100'
-              />
-              <br />
-
-              <input
-                {...register('image', { required: true })}
-                placeholder='Image Link'
-                className='p-2 m-2 w-100'
-              />
-
+              <div className='txt_field'>
+                <input
+                  // style={{ border: '2px solid black' }}
+                  type='text'
+                  required
+                  // {...register('title')}
+                />
+                <label>title</label>
+              </div>
+              <div className='txt_field'>
+                <input
+                  // style={{ border: '2px solid black' }}
+                  type='text'
+                  required
+                  // {...register('description')}
+                />
+                <label>description</label>
+              </div>
+              <div className='txt_field'>
+                <input
+                  // style={{ border: '2px solid black' }}
+                  type='text'
+                  required
+                  // {...register('image', { required: true })}
+                  // placeholder='Image Link'
+                />
+                <label>description</label>
+              </div>
               {errors.exampleRequired && <span>This field is required</span>}
 
               <input type='submit' value='Add' className='btn btn-info w-50' />

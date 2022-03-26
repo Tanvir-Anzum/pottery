@@ -9,6 +9,9 @@ import AddEvents from './components/AddEvents/AddEvents'
 import SingleItem from './components/SingleItem/SingleItem'
 import Login from './components/Login/Login'
 import Register from './components/Register/Register'
+import Dashboard from './components/Dashboard/Dashboard/Dashboard'
+import Orders from './components/Orders/Orders'
+import MakeAdmin from './components/Dashboard/MakeAdmin/MakeAdmin'
 //import AddEvents from './AddEvents/AddEvents'
 // import Login from './components/Login/Login'
 // import Register from './components/Register/Register'
@@ -29,17 +32,24 @@ function App() {
           <Route exact path='/'>
             <Home></Home>
           </Route>
-          <Route exact path='/addEvent'>
+          <Route path='/addEvent'>
             <AddEvents></AddEvents>
           </Route>
           <Route path='/singleItem/:itemId'>
             <SingleItem></SingleItem>
           </Route>
+        
           <Route path='/login'>
-           <Login></Login>
+            <Login></Login>
+          </Route>
+          {/* <Route path='/myOrders'>
+            <Orders></Orders>
+          </Route> */}
+          <Route path='/dashboard'>
+            <Dashboard></Dashboard>
           </Route>
           <Route path='/register'>
-           <Register></Register>
+            <Register></Register>
           </Route>
         </Switch>
       </Router>

@@ -1,6 +1,6 @@
 
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -31,6 +31,9 @@ const Footer = () => {
                 <div className='d-flex align-items-center'>
                   <span className='pe-3'>
                     <i className='fa fa-map-marker w'></i>
+                    {/* <FontAwesomeIcon icon='fa-solid fa-address-book' /> */}
+                    {/* <i class='fa fa-address-book' aria-hidden='true'></i> */}
+                    
                   </span>
                   <a className='ms-2 width' href='https://www.youtube.com'>
                     00456 Some Address line
@@ -66,9 +69,7 @@ const Footer = () => {
               <li>
                 <div className='d-flex align-items-center'>
                   <span className='custom'></span>
-                  <a className='ms-2 width' href=''>
-                    Home
-                  </a>
+                  <Link className='ms-2 width'>Home</Link>
                 </div>
               </li>
 
@@ -147,7 +148,6 @@ const Footer = () => {
                 className='form-control'
                 placeholder='enter your email'
               />
-             
             </form>
           </div>
         </div>
